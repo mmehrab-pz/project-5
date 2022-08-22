@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="master.css">
+    <title>Document</title>
+</head>
+
+<body id="sec">
+    <main>
+        <section id="body-timer">
+            <div>
+                <div>
+                    <span id="minute">00</span>:
+                    <span id="second">00</span>:
+                    <span id="mili">00</span>
+                </div>
+            </div>
+            <div>
+                <button id="btn-time" data-status="off" onclick="_start(this)">start</button>
+                <button id="btn-time" onclick="_stop(this)">stop</button>
+                <button id="btn-time" onclick="_reset(this)">reset</button>
+            </div>
+        </section>
+        <span id="mood">
+            <div onclick="_dark()" id="btn">
+                <i class="bi bi-lightbulb-fill" id="icon"></i>
+            </div>
+        </span>
+    </main>
+    <script src="master.js"></script>
+</body>
+
+</html>
